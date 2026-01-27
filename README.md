@@ -5,7 +5,6 @@ No DefaultEngine.ini edits required — import the plugin, assign assets, wire i
 
 - Engine: **UE 5.7**
 - Example Content: **BP_Tank** (add your own mesh/FX/audio)
-- Support: **<YOUR_SUPPORT_EMAIL>**
 
 ---
 

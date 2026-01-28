@@ -31,6 +31,7 @@ No DefaultEngine.ini edits required — import the plugin, assign assets, wire i
 ---
 
 ## Input Setup (Legacy Input)
+
 Project Settings → **Input**
 
 ### Axis Mappings
@@ -67,6 +68,7 @@ Project Settings → **Input**
 ---
 
 ## Recommended Physics Settings (especially for multiplayer)
+
 Project Settings:
 - Engine → Physics → Framerate: **Tick Physics Async** *(recommended)*
 - Engine → Physics → Replication: **Enable Physics Prediction**

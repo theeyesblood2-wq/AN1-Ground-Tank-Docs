@@ -1,10 +1,13 @@
 # AN1 Ground Tank (UE 5.7) — Quick Start
 
-**AN1** is a plug-and-play ground tank framework for Unreal Engine 5.7.
+**AN1** is a plug-and-play ground tank framework for Unreal Engine 5.7.  
 No DefaultEngine.ini edits required — import the plugin, assign assets, wire inputs, hit Play.
 
-- Engine: **UE 5.7**
-- Example Content: **BP_Tank** (add your own mesh/FX/audio)
+- **Engine:** UE 5.7
+- **Example Content:** BP_Tank (add your own mesh/FX/audio)
+- **Support:** jbkm66777@gmail.com
+
+> This plugin is content-free. You must provide your own tank meshes/materials/VFX/SFX.
 
 ---
 
@@ -46,6 +49,8 @@ Project Settings → **Input**
 - `MonitorZoomIn` (MouseWheelUp)
 - `MonitorZoomOut` (MouseWheelDown)
 
+> If you use Enhanced Input, map the same action/axis names and call the same BP functions.
+
 ### Blueprint wiring (BP_Tank)
 - `InputAxis MoveForward` → `MoveForward(Value)`
 - `InputAxis Turn` → `MoveRight(Value)`
@@ -63,7 +68,7 @@ Project Settings → **Input**
 
 ## Recommended Physics Settings (especially for multiplayer)
 Project Settings:
-- Engine → Physics → Framerate: **Tick Physics Async** (recommended)
+- Engine → Physics → Framerate: **Tick Physics Async** *(recommended)*
 - Engine → Physics → Replication: **Enable Physics Prediction**
 - Engine → Physics → Replication: **Enable Physics History Capture**
 
@@ -72,32 +77,33 @@ AN1 works without these, but prediction/history capture improves resimulation st
 ---
 
 ## Customization
+
 ### Animation
-Create your own AnimBP and set Parent Class to `AN1TankAnimInstance`.
+Create your own AnimBP and set Parent Class to `AN1TankAnimInstance`.  
 Use exposed variables (Pitch/Roll, throttle response, turret yaw/cannon pitch, running gear arrays) to drive your bone transforms.
 
 ### Projectiles / FX
-Create `BP_Shell`, `BP_Tracer`, `BP_Smoke` derived from AN1 base classes.
+Create `BP_Shell`, `BP_Tracer`, `BP_Smoke` derived from AN1 base classes.  
 Assign these Blueprint classes in the Tank’s Weapon Component.
 
 ---
 
 ## Troubleshooting
-**Tank doesn’t move**
+
+### Tank doesn’t move
 - Confirm BP_Tank is possessed (Auto Possess Player = Player 0 for quick tests).
 - Confirm your axis mappings are created and events fire in BP.
 - Confirm Brake isn’t stuck at 1.0.
 
-**Aim / turret not moving**
+### Aim / turret not moving
 - Confirm Aim is enabled in BP settings and you’re holding the Aim input (if configured).
 - Confirm you’re testing as the owning client (some HUD/aim visuals are owner-only).
 
-**Multiplayer looks jittery**
+### Multiplayer looks jittery
 - Enable Tick Physics Async + Physics Prediction + Physics History Capture.
 - Test Listen Server + 1 Client first.
 
 ---
 
 ## Support
-Email: jbkm66777@gmail.com
-
+Email: **jbkm66777@gmail.com**

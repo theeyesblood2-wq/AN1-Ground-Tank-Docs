@@ -34,41 +34,78 @@ No DefaultEngine.ini edits required — import the plugin, assign assets, wire i
 
 Project Settings → **Input**
 
+> If you use **Enhanced Input**, create equivalent Actions/Axes and call the same Blueprint functions shown below.
+
 ### Axis Mappings
 - `MoveForward` (W +1, S -1)
 - `Turn` (D +1, A -1)
+- `LookUp` (Mouse Y)
+- `LookRight` (Mouse X)
+- `CameraZoomAxis` (Mouse Wheel Axis) — TPP/FPP/Gunner zoom
+- `MonitorZoomin_Out` (Mouse Wheel Axis or custom axis) — Turret monitor zoom (hold-style)
 
 ### Action Mappings
 - `Brake` (Space)
-- `Aim` (Right Mouse)
-- `FireMG` (Left Mouse)
-- `FireTurret` (Left Ctrl) *(or any key you want)*
-- `DeploySmoke` (G)
-- `ToggleDriverFPP` (V)
-- `ToggleDriverFPPTurretAim` (B)
-- `MonitorResetZoom` (R)
-- `MonitorZoomIn` (MouseWheelUp)
-- `MonitorZoomOut` (MouseWheelDown)
+- `Aim` (Right Mouse) — hold
+- `FireMG` (Left Mouse) — hold
+- `FireTurret` (Left Ctrl) — press
+- `DeploySmoke` (G) — press
+- `ToggleCamera` (C) — press (TPP ↔ Gunner)
+- `CameraReset` (R or Middle Mouse) — press
+- `DriverFPP_Toggle` (V) — press (TPP ↔ Driver FPP)
+- `DriverFPP_TurretAim_Toggle` (B) — press
+- `MonitorResetZoom` (R) — press
 
-> If you use Enhanced Input, map the same action/axis names and call the same BP functions.
+Optional (monitor zoom as buttons instead of axis):
+- `MonitorZoom_In` (MouseWheelUp or key)
+- `MonitorZoom_Out` (MouseWheelDown or key)
 
-### Blueprint wiring (BP_Tank)
-- `InputAxis MoveForward` → `MoveForward(Value)`
-- `InputAxis Turn` → `MoveRight(Value)`
-- `Brake` pressed/released → `SetBrake(1.0 / 0.0)`
-- `Aim` pressed/released → `AN1 SetTPPAimHeld(true/false)`
-- `FireMG` pressed/released → `StartFireMG / StopFireMG`
-- `FireTurret` pressed → `FireTurretOnce`
-- `DeploySmoke` pressed → `DeploySmoke`
-- `MonitorResetZoom` → `MonitorResetZoom`
-- `MonitorZoom*` → `MonitorZoomIn / MonitorZoomOut` (or axis if you use one)
-- `ToggleDriverFPP` → `ToggleDriverFPP`
-- `ToggleDriverFPPTurretAim` → `ToggleDriverFPPTurretAim`
+---
+
+## Blueprint wiring (BP_Tank)
+
+### Movement
+- `InputAxis MoveForward` → `MoveForward(Value)` *(Target: self / AN1 Tank Base)*
+- `InputAxis Turn` → `MoveRight(Value)` *(Target: self / AN1 Tank Base)*
+- `Brake` pressed → `SetBrake(InBrake=1.0)` *(Target: PhysicsMovement / AN1 Physics Tank Movement Component)*
+- `Brake` released → `SetBrake(InBrake=0.0)` *(Target: PhysicsMovement)*
+
+### Look
+- `InputAxis LookUp` → `LookUp(AxisValue)` *(Target: self / AN1 Tank Base)*
+- `InputAxis LookRight` → `LookRight(AxisValue)` *(Target: self / AN1 Tank Base)*
+
+### Camera zoom + reset (TPP/FPP/Gunner)
+- `InputAxis CameraZoomAxis` → `CameraZoomAxis(AxisValue)` *(Target: self / AN1 Tank Base)*
+- `CameraReset` pressed → `CameraReset()` *(Target: self / AN1 Tank Base)*
+
+### Toggle camera (TPP ↔ Gunner)
+- `ToggleCamera` pressed → `ToggleCamera()` *(Target: self / AN1 Tank Base)*
+
+### Driver FPP toggles
+> These functions work only when the relevant TPP/Driver FPP camera mode is active.
+- `DriverFPP_Toggle` pressed → `ToggleDriverFPP()` *(Target: self / AN1 Tank Base)*
+- `DriverFPP_TurretAim_Toggle` pressed → `ToggleDriverFPPTurretAim()` *(Target: self / AN1 Tank Base)*
+
+### Aim / Weapons / Smoke
+- `Aim` pressed → `AN1 SetTPPAimHeld(true)` *(Target: self / AN1 Tank Skeletal)*
+- `Aim` released → `AN1 SetTPPAimHeld(false)` *(Target: self / AN1 Tank Skeletal)*
+- `FireMG` pressed → `StartFireMG()` *(Target: TankWeapons / AN1 Tank Weapon Component)*
+- `FireMG` released → `StopFireMG()` *(Target: TankWeapons)*
+- `FireTurret` pressed → `FireTurretOnce()` *(Target: TankWeapons)*
+- `DeploySmoke` pressed → `DeploySmoke()` *(Target: TankWeapons)*
+
+### Turret Monitor zoom
+Hold-style (axis):
+- `MonitorResetZoom` pressed → `MonitorResetZoom()` *(Target: self / AN1 Tank Base)*
+- `InputAxis MonitorZoomin_Out` → `MonitorZoomAxis(AxisValue)` *(Target: self / AN1 Tank Base)*
+
+Optional (button-style):
+- `MonitorZoom_In` pressed → `MonitorZoomIn()` *(Target: self / AN1 Tank Base)*
+- `MonitorZoom_Out` pressed → `MonitorZoomOut()` *(Target: self / AN1 Tank Base)*
 
 ---
 
 ## Recommended Physics Settings (especially for multiplayer)
-
 Project Settings:
 - Engine → Physics → Framerate: **Tick Physics Async** *(recommended)*
 - Engine → Physics → Replication: **Enable Physics Prediction**

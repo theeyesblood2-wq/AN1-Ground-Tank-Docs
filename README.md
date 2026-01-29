@@ -10,7 +10,6 @@ No DefaultEngine.ini edits required — import the plugin, assign assets, wire i
 - **Support:** jbkm66777@gmail.com
 
 > This plugin is content-free. You must provide your own tank meshes/materials/VFX/SFX.
-> This plugin is content-free. You must provide your own tank meshes/materials/VFX/SFX.
 
 > **Demo visuals notice:** Screenshots/videos may show the free “M1A1 Abrams Tank (West)” asset by Vigilante Assets.
 > This asset is **NOT included** with AN1. AN1 ships content-free (code + example Blueprints only).

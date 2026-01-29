@@ -1,5 +1,7 @@
 # AN1 Ground Tank (UE 5.7) — Quick Start
 
+**Tested on:** UE 5.7 (Blueprint project)
+
 **AN1** is a plug-and-play ground tank framework for Unreal Engine 5.7.  
 No DefaultEngine.ini edits required — import the plugin, assign assets, wire inputs, hit Play.
 
@@ -59,6 +61,8 @@ Project Settings → **Input**
 Optional (monitor zoom as buttons instead of axis):
 - `MonitorZoom_In` (MouseWheelUp or key)
 - `MonitorZoom_Out` (MouseWheelDown or key)
+
+> Wiring screenshots: [INPUTS.md](INPUTS.md)
 
 ---
 

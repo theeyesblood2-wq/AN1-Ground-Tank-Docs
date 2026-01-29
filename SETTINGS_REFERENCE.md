@@ -88,39 +88,3 @@ This page is a visual reference of the default AN1 settings shown in the example
 ![](Images/EditorSettings/Editor_Setting_A.png)
 
 ![](Images/EditorSettings/Editor_Setting_B.png)
-
----
-
-## Screenshot Gallery (Montage)
-
-> Quick overview images (montages). Full per-setting screenshots are in: [SETTINGS_REFERENCE.md](SETTINGS_REFERENCE.md)
-
-![](Images/More/T_Enable_Plugin.png)
-![](Images/More/T_Classes.png)
-
-![](Images/More/T_Camera_A.png)
-![](Images/More/T_Camera_B.png)
-![](Images/More/T_Camera_C.png)
-
-![](Images/More/T_Movement_A.png)
-![](Images/More/T_Movement_B.png)
-![](Images/More/T_Movement_C.png)
-
-![](Images/More/T_Weapon_A.png)
-![](Images/More/T_Weapon_B.png)
-
-![](Images/More/T_RunningGear_A.png)
-![](Images/More/T_RunningGear_B.png)
-![](Images/More/T_Track.png)
-
-![](Images/More/T_HUD.png)
-![](Images/More/T_Audio.png)
-
-![](Images/More/T_Animation_A.png)
-![](Images/More/T_Monitor.png)
-
-![](Images/More/T_Editor_Setting_A.png)
-![](Images/More/T_Editor_Setting_B.png)
-
-![](Images/More/T_INPUTS_E.png)
-

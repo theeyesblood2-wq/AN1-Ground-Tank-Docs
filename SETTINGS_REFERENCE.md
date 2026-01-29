@@ -16,13 +16,13 @@ This page is a visual reference of the default AN1 settings shown in the example
 ---
 
 ## Movement
+![](Images/Movement/AN1_Movement_A.png)
+
 ![](Images/Movement/AN1_Movement_B.png)
 
 ![](Images/Movement/AN1_Movement_C.png)
 
 ![](Images/Movement/AN1_Movement_D.png)
-
-![](Images/Movement/AN1_PhysicsMovement_A.png)
 
 ---
 
@@ -31,16 +31,16 @@ This page is a visual reference of the default AN1 settings shown in the example
 
 ![](Images/Weapon/AN1_Weapon_B.png)
 
-![](Images/Weapon/BP/AN1_Smoke.png)
+![](Images/Weapon/AN1_TankShellProjectile.png)
 
-![](Images/Weapon/BP/AN1_TankShellProjectile.png)
+![](Images/Weapon/AN1_Tracer.png)
 
-![](Images/Weapon/BP/AN1_Tracer.png)
+![](Images/Weapon/AN1_Smoke.png)
 
 ---
 
 ## Tracks
-![](Images/Tracks/AN1_Tracks_UV.png)
+![](Images/RunningGearVisual/AN1_Tracks_UV.png)
 
 ---
 
@@ -69,21 +69,22 @@ This page is a visual reference of the default AN1 settings shown in the example
 
 ---
 
-## Example Tank
-![](Images/Tank%20Example/AN1_Tank%20Example.png)
-
----
-
 ## Animation (AnimBP Setup)
 ![](Images/Animation/Animation_A.png)
+
 ![](Images/Animation/Animation_B.png)
+
 ![](Images/Animation/Animation_C.png)
+
 ![](Images/Animation/Animation_D.png)
+
 ![](Images/Animation/Animation_E.png)
+
 ![](Images/Animation/Animation_F.png)
 
 ---
 
 ## Editor Settings (Recommended for Multiplayer Physics)
 ![](Images/EditorSettings/Editor_Setting_A.png)
+
 ![](Images/EditorSettings/Editor_Setting_B.png)

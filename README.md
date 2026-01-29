@@ -156,11 +156,12 @@ Assign these Blueprint classes in the Tank’s Weapon Component.
 ## More Documentation
 - [Inputs / Keybinds (Blueprint wiring screenshots)](INPUTS.md)
 - [Settings Reference (screenshots)](SETTINGS_REFERENCE.md)
+- [Montage Gallery (more screenshots)](MONTAGE_GALLERY_MORE.md)
 
 ---
 
 ## Video
-- Full Setup + SP/MP Test (UE 5.7): **Coming soon**
+- Full Setup + SP/MP Test (UE 5.7): YouTube C++ Plugin Only (No Assets Included)
 
 ---
 

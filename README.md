@@ -161,7 +161,7 @@ Assign these Blueprint classes in the Tank’s Weapon Component.
 ---
 
 ## Video
-- Full Setup + SP/MP Test (UE 5.7): YouTube C++ Plugin Only (No Assets Included)
+- Full Setup + SP/MP Test (UE 5.7): https://www.youtube.com/watch?v=B8O6HjEgmzs
 
 ---
 

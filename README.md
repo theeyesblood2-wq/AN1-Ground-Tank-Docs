@@ -13,6 +13,7 @@ No DefaultEngine.ini edits required — import the plugin, assign assets, wire i
 
 > **Demo visuals notice:** Screenshots/videos may show the free “M1A1 Abrams Tank (West)” asset by Vigilante Assets.
 > This asset is **NOT included** with AN1. AN1 ships content-free (code + example Blueprints only).
+> **MP test tip:** Lock FPS to 60 (`t.maxfps 60`) for consistent physics/network timing. PIE: Run Under One Process = OFF. Listen Server: Launch Separate Server = ON.
 
 ---
 
@@ -155,5 +156,11 @@ Assign these Blueprint classes in the Tank’s Weapon Component.
 - [Settings Reference (screenshots)](SETTINGS_REFERENCE.md)
 
 ---
+
+## Video
+- Full Setup + SP/MP Test (UE 5.7): **Coming soon**
+
+---
+
 ## Support
 Email: **jbkm66777@gmail.com**

@@ -71,3 +71,19 @@ This page is a visual reference of the default AN1 settings shown in the example
 
 ## Example Tank
 ![](Images/Tank%20Example/AN1_Tank%20Example.png)
+
+---
+
+## Animation (AnimBP Setup)
+![](Images/Animation/Animation_A.png)
+![](Images/Animation/Animation_B.png)
+![](Images/Animation/Animation_C.png)
+![](Images/Animation/Animation_D.png)
+![](Images/Animation/Animation_E.png)
+![](Images/Animation/Animation_F.png)
+
+---
+
+## Editor Settings (Recommended for Multiplayer Physics)
+![](Images/EditorSettings/Editor_Setting_A.png)
+![](Images/EditorSettings/Editor_Setting_B.png)

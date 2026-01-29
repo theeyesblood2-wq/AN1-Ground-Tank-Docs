@@ -1,103 +1,36 @@
-# AN1 Inputs & Blueprint Wiring (Legacy Input)
+# AN1 Inputs / Keybinds (Blueprint Wiring Screenshots)
 
-Project Settings → **Input**
+These screenshots show the example `BP_Tank` input wiring.
 
-> If you use **Enhanced Input**, create equivalent Actions/Axes and call the same Blueprint functions shown here.
-
----
-
-## Movement + Brake
-
-**Axis Mappings**
-- `MoveForward` (W +1, S -1)
-- `Turn` (D +1, A -1)
-
-**Action Mappings**
-- `Brake` (Space)
-
-**BP Wiring (BP_Tank)**
-![](Images/INPUTS/Screenshot%202026-01-29%20002611.png)
+> Project Settings → Input mapping list is in `README.md`.
 
 ---
 
-## Look Up / Right
+## Wiring Screenshots
 
-**Axis Mappings**
-- `LookUp` (Mouse Y)
-- `LookRight` (Mouse X)
+### 1
+![](Images/INPUTS/INPUT_1.png)
 
-**BP Wiring (BP_Tank)**
-![](Images/INPUTS/Screenshot%202026-01-29%20003044.png)
+### 2
+![](Images/INPUTS/INPUT_2.png)
 
----
+### 3
+![](Images/INPUTS/INPUT_3.png)
 
-## TPP/FPP/Gunner Zoom + Reset
+### 4
+![](Images/INPUTS/INPUT_4.png)
 
-**Axis Mappings**
-- `CameraZoomAxis` (Mouse Wheel Axis)
+### 5
+![](Images/INPUTS/INPUT_5.png)
 
-**Action Mappings**
-- `CameraReset`
+### 6
+![](Images/INPUTS/INPUT_6.png)
 
-**BP Wiring (BP_Tank)**
-![](Images/INPUTS/Screenshot%202026-01-29%20002623.png)
+### 7
+![](Images/INPUTS/INPUT_7.png)
 
----
+### 8
+![](Images/INPUTS/INPUT_8.png)
 
-## Toggle Camera (TPP ↔ Gunner)
-
-**Action Mappings**
-- `ToggleCamera`
-
-**BP Wiring (BP_Tank)**
-![](Images/INPUTS/Screenshot%202026-01-29%20002629.png)
-
----
-
-## Driver FPP Toggles
-
-**Action Mappings**
-- `DriverFPP_Toggle`
-- `DriverFPP_TurretAim_Toggle`
-
-> Works only when the relevant TPP/Driver FPP camera mode is active.
-
-**BP Wiring (BP_Tank)**
-![](Images/INPUTS/Screenshot%202026-01-29%20002634.png)
-
----
-
-## Aim / FireMG / FireTurret / Smoke
-
-**Action Mappings**
-- `Aim` (hold)
-- `FireMG` (hold)
-- `FireTurret` (press)
-- `DeploySmoke` (press)
-
-**BP Wiring (BP_Tank)**
-![](Images/INPUTS/Screenshot%202026-01-29%20002647.png)
-
----
-
-## Turret Monitor Zoom (Hold-style)
-
-**Axis Mappings**
-- `MonitorZoomin_Out`
-
-**Action Mappings**
-- `MonitorResetZoom`
-
-**BP Wiring (BP_Tank)**
-![](Images/INPUTS/Screenshot%202026-01-29%20002653.png)
-
----
-
-## Turret Monitor Zoom (Button-style, optional)
-
-**Action Mappings**
-- `MonitorZoom_In`
-- `MonitorZoom_Out`
-
-**BP Wiring (BP_Tank)**
-![](Images/INPUTS/Screenshot%202026-01-29%20002729.png)
+### 9
+![](Images/INPUTS/INPUT_9.png)

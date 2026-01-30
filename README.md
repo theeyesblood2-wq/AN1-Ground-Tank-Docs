@@ -49,7 +49,7 @@ Project Settings → **Input**
 - `LookUp` (Mouse Y)
 - `LookRight` (Mouse X)
 - `CameraZoomAxis` (Mouse Wheel Axis) — TPP/FPP/Gunner zoom
-- `MonitorZoomin_Out` (Mouse Wheel Axis or custom axis) — Turret monitor zoom (hold-style)
+- `MonitorZoomin_Out` (2 - 1) or mouse Axis or custom axis) — Turret monitor zoom (hold-style)
 
 ### Action Mappings Examples:
 - `Brake` (Space)

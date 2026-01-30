@@ -51,17 +51,17 @@ Project Settings → **Input**
 - `CameraZoomAxis` (Mouse Wheel Axis) — TPP/FPP/Gunner zoom
 - `MonitorZoomin_Out` (Mouse Wheel Axis or custom axis) — Turret monitor zoom (hold-style)
 
-### Action Mappings
+### Action Mappings Examples:
 - `Brake` (Space)
-- `Aim` (Right Mouse) — hold
+- `Aim` (Right Mouse) — hold if the bool ebnanled. default auto aim.
 - `FireMG` (Left Mouse) — hold
-- `FireTurret` (Left Ctrl) — press
-- `DeploySmoke` (G) — press
-- `ToggleCamera` (C) — press (TPP ↔ Gunner)
-- `CameraReset` (R or Middle Mouse) — press
-- `DriverFPP_Toggle` (V) — press (TPP ↔ Driver FPP)
-- `DriverFPP_TurretAim_Toggle` (B) — press
-- `MonitorResetZoom` (R) — press
+- `FireTurret` (Left Mouse) — press
+- `DeploySmoke` (C) — press
+- `ToggleCamera` (V) — press (TPP ↔ Gunner)
+- `CameraReset` (5 or Middle Mouse) — press
+- `DriverFPP_Toggle` (Tap) — press (TPP ↔ Driver FPP)
+- `DriverFPP_TurretAim_Toggle` (2) — press
+- `MonitorResetZoom` (0 NUM) — press
 
 Optional (monitor zoom as buttons instead of axis):
 - `MonitorZoom_In` (MouseWheelUp or key)

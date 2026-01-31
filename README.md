@@ -7,7 +7,7 @@ No DefaultEngine.ini edits required — import the plugin, assign assets, wire i
 
 - **Engine:** UE 5.7
 - **Example Content:** BP_Tank (add your own mesh/FX/audio)
-- **Support:** jbkm66777@gmail.com
+- **Support:** atgamesops@gmail.com
 
 > This plugin is content-free. You must provide your own tank meshes/materials/VFX/SFX.
 
@@ -166,4 +166,4 @@ Assign these Blueprint classes in the Tank’s Weapon Component.
 ---
 
 ## Support
-Email: **jbkm66777@gmail.com**
+Email: **atgamesops@gmail.com**
